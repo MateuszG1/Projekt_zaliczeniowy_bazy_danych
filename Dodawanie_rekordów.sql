@@ -1,0 +1,88 @@
+USE hurtownia;
+
+INSERT INTO dostawcy (Nazwa_dostawcy, Nr_telefonu_dostawcy, Adres) VALUES
+('Bartek dachy',123456789,'Dworcowa 5 Olsztyn'),
+('Schodex',234567891,'Kolejowa 10 Olsztyn'),
+('Drzwi i okna',345678912,'Profesorska 3/2 Olsztyn'),
+('Kraina farb',456789123,'Kresowa 1 Olsztyn'),
+('Firanki',123321123,'Kwiatowa 2/5 Olsztyn'),
+('Fabryka płytek',567765567,'Towarowa 35 Olsztyn'),
+('Poręcze sp.z o.o.',909090909,'Kołobrzeska 3 Olsztyn'),
+('Dobre drzwi',134578909,'Bajkowa 15 Olsztyn'),
+('Okna dachowe',456090888,'Warszawska 5 Olsztyn'),
+('Bramy garażowe Nowak',129129992,'Warszawska 30 Olsztyn'),
+('Panelex',456754232,'Żelazna 13 Olsztyn'),
+('Lampex',456654123,'Polna 10 Olsztyn'),
+('Do remontu',578342123,'Artyleryjska 1 Olsztyn');
+
+INSERT INTO klienci (Imie_klienta, Nazwisko_klienta, Nr_telefonu_klienta) VALUES
+('Bartosz', 'Kowalski',924590708),
+('Adam', 'Nowak',918281086),
+('Jolanta', 'Wiśniewska',226265422),
+('Ala', 'Wójcik',997922548),
+('Cezary', 'Kowalczyk',327411372),
+('Bartosz', 'Kamiński',903480177),
+('Mateusz', 'Lewandowski',949953042),
+('Juliusz', 'Zieliński',518589712),
+('Julia', 'Szymańska',373160312),
+('Aleksandra', 'Woźniak',150768006),
+('Bartosz', 'Dąbrowski',873434797),
+('Hubert', 'Kozłowski',705192003),
+('Henryk', 'Jankowski',202800993),
+('Grzegorz', 'Mazur',577985927),
+('Halina', 'Wojciechowska',244851213),
+('Kacper', 'Kwiatkowski',504418012),
+('Mateusz', 'Krawczyk',680524998);
+
+INSERT INTO pracownicy (Pesel_pracownika, Imie_pracownika, Nazwisko_pracownika, Nr_telefonu_pracownika) VALUES
+(29112031607,'Zuzanna','Wieczorek',497451844),
+(24111240227,'Antoni','Jabłoński',891404623),
+(15232477403,'Jakub','Wróbel',444053865),
+(82062065553,'Jan','Majewski',116429336),
+(19211299220,'Szymon','Olszewski',444199400),
+(19020307002,'Aleksander','Stępień',953602814),
+(70010849582,'Julia','Wieczorek',742665065),
+(28061890132,'Adam','Malinowski',912089987),
+(97091672706,'Marcel','Jaworski',310816411),
+(98120508807,'Nikodem','Adamczyk',419838987),
+(55112237385,'Miłosz','Dudek',481333035);
+
+INSERT INTO produkty (Nazwa_produktu, Producent, Kod_dostawcy, Cena, Ilość) VALUES
+("Stopnie dębowe","Schodnik",2,500,20),
+("Stopnie bukowe","Schodnik",2,300,50),
+("Blachodachowka","Blacharz",1,1000,10),
+("Dachówka czerwona paczka","Dasznik",1,500,40),
+("Drzwi wejściowe","Safe home",3,2500,2),
+("Farba niebieska","Dulux",4,50,30),
+("Farba czerwona","Schodnik",4,50,25),
+("Farba zielona","Schodnik",4,50,30),
+("Firana ozdobna","Firex",5,100,20),
+("Płytki kwadratowe","Bestile",6,100,300),
+("Płytki trójkątne","Bestile",6,100,100),
+("Poręcz metalowa","Rurex",7,400,10),
+("Poręcz drewniana","Drzewex",7,700,10),
+("Drzwi domowe","Dobre drzwi",8,500,5),
+("Okno połaciowe","Velux",9,1500,10),
+("Brama garażowa","Garażex",10,750,2),
+("Panele typ A","Panelex",11,100,200),
+("Panele typ B","Panelex",11,150,100),
+("Lampa budowlana","Świetlik",12,100,5),
+("Drabina 3 metry","Schodnik",13,150,10);
+
+INSERT INTO zamówienia(Kod_produktu, Kod_zamawiającego, Ilość, Status_zamówienia) VALUES
+(3,13,5,'Zrealizowane'),
+(5,1,1,'Zrealizowane'),
+(8,5,2,'Oczekujące'),
+(8,5,5,'Zrealizowane'),
+(17,12,50,'Zrealizowane'),
+(17,11,50,'Oczekujące'),
+(20,13,1,'Zrealizowane'),
+(19,13,1,'Zrealizowane'),
+(15,2,2,'Oczekujące'),
+(13,17,5,'Oczekujące'),
+(9,7,15,'Zrealizowane'),
+(18,8,50,'Zrealizowane'),
+(16,14,1,'Oczekujące'),
+(14,9,3,'Zrealizowane'),
+(9,9,5,'Oczekujące'),
+(4,15,20,'Oczekujące');
