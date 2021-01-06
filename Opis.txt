@@ -1,4 +1,4 @@
-Mateusz Grześkiewicz grupa I/2
+Mateusz Grześkiewicz IO rok 1 grupa I/2
 Numer albumu: 159287
 
 Projekt bazy danych przedstawia hurtownie produktów do remontów oraz budowlanych.
