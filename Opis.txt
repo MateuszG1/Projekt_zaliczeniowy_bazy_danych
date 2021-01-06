@@ -1,0 +1,6 @@
+Mateusz Grześkiewicz grupa I/2
+Numer albumu: 159287
+
+Projekt bazy danych przedstawia hurtownie produktów do remontów oraz budowlanych.
+Ma służyć m.in. śledzeniu produktów oferowanych przez hurtownie oraz składanych zamówień.
+Przechowuje dane o produktach w hurtownii, dostawcach, klientach, pracownikach oraz zamówieniach składanych przez klientów.
